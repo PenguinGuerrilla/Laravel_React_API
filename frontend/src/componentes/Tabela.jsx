@@ -36,20 +36,28 @@ function Tabela() {
     });
 
   return (
-    <table className="table">
-      <thead>
-        <tr>
-          <th scope="col">#</th>
-          <th scope="col">Nome</th>
-          <th scope="col">Email</th>
-          <th scope="col">CPF</th>
-          <th scope="col">Nascimento</th>
-          <th scope="col">Telefone</th>
-          <th scope="col">Sexo</th>
-        </tr>
-      </thead>
-      <tbody id="tableBody"></tbody>
-    </table>
+    <div
+      className="container"
+      style={{ outline: "2px solid grey", borderRadius: "15px", padding: "0", textAlign: 'center' }}
+    >
+      <table
+        className="table container table-striped"
+        style={{ margin: "0", padding: "0" }}
+      >
+        <thead>
+          <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Nome</th>
+            <th scope="col">Email</th>
+            <th scope="col">CPF</th>
+            <th scope="col">Nascimento</th>
+            <th scope="col">Telefone</th>
+            <th scope="col">Sexo</th>
+          </tr>
+        </thead>
+        <tbody id="tableBody"></tbody>
+      </table>
+    </div>
   );
 }
 export default Tabela;

@@ -5,11 +5,14 @@ import viteLogo from "/vite.svg";
 import Nav from "./componentes/Nav";
 import Footer from "./componentes/Footer";
 import Tabela from "./componentes/Tabela";
+import BarraInsert from "./componentes/BarraInsert";
+import BarraNav from "./componentes/BarraNav";
 
 function App() {
   return (
     <>
-      <Nav />
+      <BarraNav />
+      <BarraInsert />
       <Tabela />
       <Footer />
     </>
